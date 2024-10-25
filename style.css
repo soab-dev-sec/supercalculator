@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #190f67;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    background: #160d5f;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2) ;
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    animation: 5s opac infinite reverse linear;
+}
+.calculator form input:hover{
+    box-shadow: 8px 8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2) ;
+    background:  transparent;
+}
+form .display{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+@keyframes opac{
+    0%{
+        
+        transform: translatex(0%);
+    }
+    25%{
+        transform: translatex(5%);
+    }
+    50%{
+        transform: translatex(0%);
+    }
+    75%{
+        transform: translatex(-5%);
+    }
+    100%{
+        transform: translatex(0%);
+    }
+}
+@keyframes opace{
+    0%{
+        transform: translatex(0%);
+    }
+    50%{
+        transform: translatex(100%);
+    }
+    100%{
+        transform: translatex(0%);
+    }
+    /* 75%{
+        transform: translatex(-5%);
+    }
+    100%{
+        transform: translatex(0%);
+    } */
+}
+
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.equal{
+    width: 145px;
+}
+
+form input.operateur{
+    color: #1ab010;
+}
+.bul{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.bul .bulb-inner1{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: #033e6b4c;
+    margin: 0.5rem; 
+    animation: 5s opace infinite reverse linear; 
+    top:0%;
+}
+.w{
+    width: 100%;
+    height: auto;
+}
+.bul .bulb-inner2{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: #150a5f;
+    margin: 0.5rem;
+    animation: 5s opace infinite reverse linear;
+    top:25%;
+}
+.bul .bulb-inner3{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: #2b292e52;
+    margin: 0.5rem;
+    animation: 5s opace infinite reverse linear;
+    top:50%;
+}
+.bul .bulb-inner4{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: #0d05804f;
+    margin: 0.5rem;
+    animation: 5s opace infinite reverse linear;
+    top:75%;
+}
